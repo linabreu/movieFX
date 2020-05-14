@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="582.0" prefWidth="429.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="moviesfx.FXMLDocumentController">
+    <children>
+      <VBox alignment="TOP_CENTER" prefHeight="605.0" prefWidth="429.0" AnchorPane.bottomAnchor="-98.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Classic Movies" textAlignment="CENTER" textOrigin="TOP">
+               <font>
+                  <Font name="Arial Black" size="27.0" />
+               </font>
+            </Text>
+            <ListView fx:id="movieListBox" prefHeight="328.0" prefWidth="429.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Director">
+               <font>
+                  <Font name="Arial" size="25.0" />
+               </font>
+            </Text>
+            <Label fx:id="directorLabel" onMouseClicked="#displayInfo" prefHeight="37.0" prefWidth="329.0" style="-fx-border-color: black;" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Release Year:">
+               <font>
+                  <Font name="Arial" size="25.0" />
+               </font>
+            </Text>
+            <Label fx:id="releaseYearLabel" onMouseClicked="#displayInfo" prefHeight="37.0" prefWidth="329.0" style="-fx-border-color: black;" />
+            <Button mnemonicParsing="false" onMouseClicked="#displayInfo" text="Get Info" />
+            <Label text="All movie information retrieved from IMDB.com">
+               <font>
+                  <Font name="System Italic" size="9.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+    </children>
+</AnchorPane>
